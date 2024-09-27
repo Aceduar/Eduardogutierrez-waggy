@@ -50,7 +50,7 @@ nav ul li a:hover {
 
 #hero {
     background-color: rgba(0, 0, 0, 0.7);
-    background-image: url(/Recursos/joe-caione-qO-PIF84Vxg-unsplash.jpg);
+    background-image: url(./Recursos/joe-caione-qO-PIF84Vxg-unsplash.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;

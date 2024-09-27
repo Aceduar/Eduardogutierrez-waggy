@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waggy: Guardería Canina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="edwebsite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="/Recursos/Logo-white.png" alt="Logo de Waggy" />
+            </div>
+            <ul>
+                <li><a href="#acerca">Acerca</a></li>
+                <li><a href="#reserva">Reserva</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content container">
+            <h1>Tranquilidad para ti y tu mascota</h1>
+            <p>Ofrecemos un ambiente seguro y divertido donde tu mascota podrá jugar y socializar.</p>
+            <a href="#reserva"><button id="btn-reservar">Reserva ahora</button></a>
+        </div>
+    </section>
+
+    <div class="container">
+            <section id="acerca">
+                <div class="content"> 
+                <h2 class="titulo">Acerca de Waggy</h2>
+                <p>En Waggy, sabemos lo importante que es tu perro para ti, y por eso ofrecemos un espacio seguro y divertido donde tu mascota recibirá todo el cariño y cuidado que merece. Nuestra misión es brindarte tranquilidad mientras tu peludo disfruta de un día lleno de juegos, atención personalizada y bienestar.
+
+                    Con un equipo de cuidadores apasionados y expertos, aseguramos que cada perro reciba el trato único que necesita, en un ambiente que promueve su felicidad y seguridad. Además, nuestras instalaciones están diseñadas pensando en su confort, con áreas de juego amplias y actividades que estimulan tanto su cuerpo como su mente.
+                    
+                    En Waggy, tu perro no solo es nuestro cliente, ¡es parte de nuestra familia!</p>
+                </div>
+                
+            </section>
+
+            <section id="porque">
+                <h2 class="titulo">¿Por qué elegir Waggy?</h2>
+                <div class="razones-grid">
+                    <div class="razon">
+                        <h3>Equipo Profesional</h3>
+                        <p>Nos especializamos en el cuidado y bienestar de tu perro, con personal capacitado.</p>
+                    </div>
+                    <div class="razon">
+                        <h3>Instalaciones de primera</h3>
+                        <p>Ambiente cómodo y seguro para que tu mascota se sienta como en casa.</p>
+                    </div>
+                    <div class="razon">
+                        <h3>Atención Personalizada</h3>
+                        <p>Cada mascota recibe un trato especial basado en sus necesidades.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="reserva">
+                <h2 class="titulo">Reserva tu cita</h2>
+            
+                <!-- Paso 1: Datos del dueño y mascota -->
+                <div id="paso-1" class="form-step active">
+                    <form id="form-datos">
+                        <label for="nombre-dueno">Nombre del dueño:</label>
+                        <input type="text" id="nombre-dueno" required>
+            
+                        <label for="correo-dueno">Correo electrónico:</label>
+                        <input type="email" id="correo-dueno" required>
+            
+                        <label for="nombre-mascota">Nombre de la mascota:</label>
+                        <input type="text" id="nombre-mascota" required>
+            
+                        <button type="button" id="btn-siguiente-1">Siguiente</button>
+                    </form>
+                </div>
+            
+           <!-- Paso 2: Selección de días -->
+<div id="paso-2" class="form-step">
+    <div id="contenedor-calendario">
+        <h3>Días disponibles en Octubre:</h3>
+        <div id="calendario-grid"></div>
+    </div>
+
+    <p id="costo-total">Total: $0</p>
+
+    <button type="button" id="btn-atras-2" class="button-secondary">Atrás</button>
+    <button type="button" id="btn-siguiente-2">Siguiente</button>
+</div>
+            
+                <!-- Paso 3: Confirmación -->
+                <div id="paso-3" class="form-step">
+                    <h3>Confirmar datos de la reserva</h3>
+                    <p>Nombre del dueño: <span id="confirm-nombre-dueno"></span></p>
+                    <p>Correo electrónico: <span id="confirm-correo-dueno"></span></p>
+                    <p>Nombre de la mascota: <span id="confirm-nombre-mascota"></span></p>
+                    <p>Días seleccionados en Octubre: <span id="confirm-dias"></span></p>
+                    <p>Costo total: <span id="confirm-costo-total"></span></p>
+            
+                    <button type="button" id="btn-atras-3" class="button-secondary">Atrás</button>
+                    <button type="button" id="btn-reservar-final">Hacer reserva</button>
+                </div>
+            </section>
+            
+            
+
+            <section id="contacto" class="content">
+                <h2 class="titulo">Contáctanos</h2>
+                <p>¿Tienes preguntas? Llámanos al +123 456 7890 o escríbenos en nuestras redes sociales.</p>
+            </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Waggy</p>
+    </footer>
+</body>
+</html>

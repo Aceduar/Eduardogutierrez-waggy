@@ -1,0 +1,212 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background: rgb(91,63,126);
+background: linear-gradient(90deg, rgba(91,63,126,1) 0%, rgba(80,80,172,1) 35%, rgba(210,136,255,1) 100%);
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 0 2rem;
+    gap: 30rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #5b3f7e; 
+}
+
+.logo img {
+    width: 100px; 
+    height: auto; 
+}
+
+#hero {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url(/Recursos/joe-caione-qO-PIF84Vxg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+}
+
+.hero-content {
+    text-align: left;
+    max-width: 600px;
+    align-items: flex-start;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+#btn-reservar {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #5b3f7e; 
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btn-reservar:hover {
+    background-color: #4a2e6d; 
+}
+
+section {
+    padding: 60px 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+.titulo {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.razones-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.razon {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    color: #777;
+}
+
+.razon h3 {
+    color: #777;
+}
+
+.container {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+input, button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #5b3f7e;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #311e47; 
+}
+
+.button-secondary {
+    background-color: white;
+    color: #5b3f7e;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-secondary:hover {
+    background-color: #2a1d3a;
+    color: white;
+}
+
+#calendario-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    color: #777;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+
+.calendario-dia {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: white;
+    color: #777;
+}
+
+.calendario-dia.seleccionado {
+    background-color: #4a2e6d;
+    color: white;
+    border-color: #4a2e6d;
+}
